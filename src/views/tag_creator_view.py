@@ -11,6 +11,5 @@ class TagCreatorView:
         product_code = body["product_code"]
 
         formatted_response = tag_creator_controller.create(product_code)
-        print(formatted_response)
 
         return HttpResponse(status_code=200, body=formatted_response)
